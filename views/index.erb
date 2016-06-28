@@ -1,0 +1,12 @@
+<h2> Bed & Breakfast Bookings </h2>
+
+<% @bb.each do |bb| %> 
+  <b>Name:</b>
+  <p><%= bb.first_name()%> <%= bb.last_name() %></p>
+  <b>Booking:</b>
+  <p><%= bb.bedroom_type()%> for <%= bb.length_of_stay() %> night(s) from <%= bb.check_in()%>.</p>
+  <% if bb.breakfast() == "yes" %>
+    <%= 'Your booking includes breakfast' %>
+  <% end %>
+  <hr>
+<% end %>

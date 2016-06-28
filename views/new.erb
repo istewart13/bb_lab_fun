@@ -1,0 +1,35 @@
+<h1> Come Stay With Us!</h1>
+
+<form action="/bb" method="post">
+  <label for="first_name">First Name:</label>
+  <input type="text" name="first_name">
+  <label for="last_name">Last Name:</label>
+  <input type="text" name="last_name"><br><br>
+
+  <label for="length_of_stay">How many nights do you want to stay?</label><br><br>
+  <select name="length_of_stay">
+    <option value="1">1 night</option>
+    <option value="2">2 nights</option>
+    <option value="3">3 nights</option>
+    <option value="4">4 nights</option>
+    <option value="5">5 nights</option><br>
+  </select><br><br>
+
+  <label for="check_in">What is your date of check in?</label><br><br>
+  <input type="date" name= "check_in"><br><br>
+
+
+
+
+  <label for="breakfast">Would you like to include breakfast?</label><br><br>
+  <input type="radio" name= "breakfast" value="yes">Aye<br>
+  <input type="radio" name= "breakfast" value="no">Naw<br><br>
+
+  <label for="bedroom_type">Please select room type:</label><br><br>
+  <input type="radio" name= "bedroom_type" value="single">Single<br>
+  <input type="radio" name= "bedroom_type" value="double">Double<br>
+  <input type="radio" name= "bedroom_type" value="twin">Twin<br><br>
+
+
+  <input type="submit" value="Confirm your booking!">
+</form>

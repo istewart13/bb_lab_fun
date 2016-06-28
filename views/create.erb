@@ -1,0 +1,9 @@
+<p>Hi, </p><%= @bb.first_name() %> <%= @bb.last_name %>
+
+<p>You have booked the following:</p>
+
+<p>Room type - <%= @bb.bedroom_type()%> for <%= @bb.length_of_stay() %> night(s) from <%= @bb.check_in()%></p>
+
+<% if @bb.breakfast() == "yes" %>
+  <%= 'Your booking includes breakfast' %>
+<% end %>
